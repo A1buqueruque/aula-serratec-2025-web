@@ -1,0 +1,21 @@
+.container {
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  flex: 1;  */
+}
+
+.title {
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.grid {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* flex-grow: 1;  */
+  /* empurra o footer para baixo */
+  justify-self: center;
+  gap: 4rem;
+  padding: 2rem;
+}

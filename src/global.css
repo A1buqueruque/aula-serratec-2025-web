@@ -1,16 +1,39 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --primary-color : #f9f9f9;
-    --secondary-color: #646cff;
-    --tertiary-color: #1a1a1a; 
+/* Variáveis globais */
+:root {
+  --primary-color: #f9f9f9;
+  --secondary-color: #646cff;
+  --tertiary-color: #1a1a1a; 
+  --text-color: #333;
+  --border-radius: 12px;
+  --font-family: 'Poppins', sans-serif;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-body,input, textarea, button,div{
-    font-size: 1rem;
-    font-family: sans-serif;
+body {
+  font-family: var(--font-family);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  
+  /* display: flex;
+  flex-direction: column;
+  min-height: 100vh; */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Aplicado no index Elemento com id="root" */
+#root {
+  /* display: flex;
+  flex-direction: column;
+  flex: 1;  */
+  /* Usado para fazer um elemento ocupar todo o espaço disponíve*/
 }
