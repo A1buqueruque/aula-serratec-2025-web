@@ -1,4 +1,5 @@
 import styles from "./Card.module.css";
+import { FaReact, FaCoffee } from "react-icons/fa"
 import logo from '../../assets/icon.png'
 
 export const Card = ({ title, description, image }) => {

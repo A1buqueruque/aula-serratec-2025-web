@@ -1,8 +1,32 @@
 .container {
   text-align: center;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  flex: 1;  */
+  flex: 1;
+  justify-items: center;
+}
+
+.cardContactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: #f7fafc;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cardContactContainer {
+    padding: 2rem;
+  }
+}
+
+.contactsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
 
 .title {
@@ -11,11 +35,10 @@
 }
 
 .grid {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* flex-grow: 1;  */
-  /* empurra o footer para baixo */
-  justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
   gap: 4rem;
   padding: 2rem;
 }

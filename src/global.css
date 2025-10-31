@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+ font-family: "Tektur";
+ src: url("./fonts/Tektur.ttf");
+}
+
 /* Variáveis globais */
 :root {
   --primary-color: #f9f9f9;
@@ -11,7 +16,7 @@
   --tertiary-color: #1a1a1a; 
   --text-color: #333;
   --border-radius: 12px;
-  --font-family: 'Poppins', sans-serif;
+  --font-family: 'Tektur', sans-serif;
   --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -19,10 +24,9 @@ body {
   font-family: var(--font-family);
   background-color: var(--secondary-color);
   color: var(--text-color);
-  
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  min-height: 100vh; */
+  min-height: 100vh;
 }
 
 html,
@@ -32,8 +36,8 @@ body {
 
 /* Aplicado no index Elemento com id="root" */
 #root {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  flex: 1;  */
-  /* Usado para fazer um elemento ocupar todo o espaço disponíve*/
+  flex: 1; 
+   /* Usado para fazer um elemento ocupar todo o espaço disponíve*/
 }
