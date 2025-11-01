@@ -1,14 +1,19 @@
+import { useState } from "react";
 import styles from "./App.module.css";
 
 import { Card } from "./components/Card/Card";
-import { ContactCard } from "./components/CardContacts/CardContacts"; 
+import { ContactCard } from "./components/CardContacts/CardContacts";
 import { Footer } from "./components/Footer/Footer";
+import {Contador} from "./components/Contador/Contador"
+import { Form } from "./components/Form/Form";
 
 import icone from "./assets/icon.png"
 import foto from './assets/pCountinho.jpg'
 import matheus from './assets/matheus.jpg'
 
 export default function App() {
+  const [nome, setNome] = useState()
+
 
   //Variavel cardsData que possui as informações dos cards que utilizamos na linha 30
   const cardsData = [
@@ -70,7 +75,9 @@ export default function App() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Meus Cards Dinâmicos</h1>
-      <div className={styles.grid}>
+      {/* <Contador/> */}
+      <Form/>
+      {/* <div className={styles.grid}>
         {cardsData.map((card, index) => {
           return (
             <Card
@@ -90,7 +97,7 @@ export default function App() {
             email={contact.email}
             image={contact.image}
           />))}
-      </div>
+      </div> */}
       <Footer />
     </div>
   );
