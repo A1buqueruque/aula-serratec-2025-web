@@ -1,7 +1,15 @@
 import { useState } from "react";
+import { useNavigate } from "react-router";
 import styles from "./Form.module.css"
 
 export function FormContacts({ onAddContato }) {
+
+  const navigate = useNavigate()
+
+  const navegar = ()=>{
+    navigate("/")
+  }
+
   const [nome, setNome] = useState("");
   const [telefone, setTelefone] = useState("");
 
@@ -12,6 +20,7 @@ export function FormContacts({ onAddContato }) {
     onAddContato({ nome, telefone });
     setNome("");
     setTelefone("");
+    navegar()
   };
 
   return (

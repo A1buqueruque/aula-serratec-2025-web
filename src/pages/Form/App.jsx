@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { FormContacts } from "./components/FormContacts/Form";
-import { ListContacts } from "./components/ListContacts/ListContacts"
-import { Footer } from "./components/Footer/Footer"
+import { FormContacts } from "../../components/FormContacts/Form";
+import { ListContacts } from "../../components/ListContacts/ListContacts"
 import styles from "./App.module.css"
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
   const removerContato = (index) => {
     setContatos(contatos.filter((_, i) => i !== index));
   };
-
+  
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Gerenciador de Contatos</h1>
@@ -22,7 +21,6 @@ function App() {
       <div className={styles.cardContactContainer}>
         <ListContacts contatos={contatos} onRemoveContato={removerContato} />
       </div>
-      <Footer />
     </div>
   );
 }
