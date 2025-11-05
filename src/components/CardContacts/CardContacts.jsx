@@ -1,8 +1,12 @@
 import React from "react";
+import { useAuth } from "../../context/authContext";
 
 import styles from './CardContacts.module.css'
 
 export function CardContacts({ contato, onRemove  }) {
+
+  const {nome} = useAuth()
+
   return (
     <div className={styles.card}>
       <div className={styles.content}>
@@ -10,7 +14,7 @@ export function CardContacts({ contato, onRemove  }) {
         <p className={styles.description}>{contato.telefone}</p>
       </div>
       <button onClick={onRemove} className={styles.button}>
-        Remover
+        Remover {nome}
       </button>
     </div>
   );

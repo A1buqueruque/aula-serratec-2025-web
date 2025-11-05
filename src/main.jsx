@@ -5,11 +5,14 @@ import './global.css'
 import { Router } from './routes/Router.jsx'
 
 import { BrowserRouter } from 'react-router'
+import { AuthProvider } from './context/authContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-       <Router/>
+      <AuthProvider>
+          <Router/>
+      </AuthProvider>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )
